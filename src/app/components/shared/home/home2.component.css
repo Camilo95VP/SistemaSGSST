@@ -167,7 +167,7 @@ body {
 
 @media (max-width: 700px) {
 	.home-content {
-		padding: 24px 8px 24px 8px;
+		min-height: 88vh;
 	}
 	.titulo {
 		font-size: 1.5rem;
