@@ -1,0 +1,151 @@
+/* Estilos copiados de planear/hacer para coherencia visual */
+.subdivision {
+	transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 16px;
+}
+.subdivision:hover {
+	transform: scale(1.005);
+	box-shadow: 0 4px 18px 0 rgba(67, 234, 122, 0.10);
+	z-index: 2;
+}
+.linea-separadora {
+	width: 100%;
+	height: 2px;
+	background: #dadada7f;
+	margin: 16px 0 8px 0;
+	border-radius: 2px;
+}
+.titulo-fase {
+	text-align: left;
+	font-size: 2.4rem;
+	font-weight: 900;
+	color: #007b19;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	text-shadow: 0 4px 18px rgba(25, 118, 210, 0.10), 0 1px 0 #fff;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.titulo-fase .icon-fase {
+	font-size: 2.1rem;
+	color: #43ea7a;
+	filter: drop-shadow(0 2px 6px #1976d2aa);
+}
+.btn-volver {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: linear-gradient(90deg, #1976d2 0%, #64b5f6 100%);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 8px 20px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-decoration: none;
+	margin-bottom: 18px;
+	box-shadow: 0 2px 8px 0 rgba(25, 118, 210, 0.10);
+	transition: background 0.2s, transform 0.15s;
+	cursor: pointer;
+}
+.btn-volver:hover {
+	background: linear-gradient(90deg, #1565c0 0%, #42a5f5 100%);
+	transform: translateY(-2px) scale(1.03);
+}
+.arrow-left {
+	font-size: 1.3em;
+	margin-right: 2px;
+}
+.actividades-list, .evidencias-list {
+	transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+	overflow: hidden;
+	max-height: 2000px;
+	opacity: 1;
+}
+.actividades-list.ng-animating, .evidencias-list.ng-animating {
+	max-height: 0;
+	opacity: 0;
+}
+.evidencia {
+	font-size: 0.98rem;
+	color: #444;
+	margin-bottom: 6px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+.evidencia::before {
+	content: '\2022';
+	color: #1976d2;
+	font-size: 1.2em;
+	margin-right: 6px;
+	line-height: 1.2;
+}
+.planear-container {
+	max-width: 1300px;
+	margin: 0px auto;
+	background: rgba(255,255,255,0.95);
+	border-radius: 16px;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+	padding: 32px 24px;
+}
+.subdivision-header {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.1rem;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #1976d2;
+	margin-bottom: 8px;
+}
+.subdivision-nombre {
+	font-size: 1.15rem;
+	font-weight: 700;
+}
+.subdivision-desc {
+	font-size: 0.98rem;
+	color: #333;
+	font-weight: 400;
+}
+.arrow {
+	margin-left: auto;
+	font-size: 1.2rem;
+}
+.actividades-list {
+	margin-left: 18px;
+}
+.actividad {
+	margin-bottom: 10px;
+}
+.actividad-header {
+	cursor: pointer;
+	color: #388e3c;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.actividad-code {
+	font-size: 1.05rem;
+}
+.evidencias-list {
+	margin-left: 18px;
+	margin-top: 4px;
+}
+.evidencia {
+	font-size: 0.98rem;
+	color: #444;
+	margin-bottom: 2px;
+}
+.evidencia-nombre {
+	font-weight: 500;
+}
+.evidencia-tipo {
+	color: #888;
+	margin-left: 6px;
+}

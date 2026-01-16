@@ -1,0 +1,1080 @@
+{
+    "fases": [
+        {
+            "id": "PLANEAR",
+            "subdivision": [
+                {
+                    "nombre": "Recursos 10%",
+                    "descripcion": "Recursos financieros, técnicos,  humanos y de otra índole requeridos para coordinar y desarrollar el SGSST (4%)",
+                    "actividades": [
+                        {
+                            "code": "1.1.1. Responsables del SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Hoja de vida del líder del sistema y del asesor"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Licencia de salud ocupacional"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Contrato de servicios"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "RUT"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Constancias de pago de seguridad social"
+                                },
+                                {
+                                    "tipo": "Examen",
+                                    "nombre": "Examen médico ocupacional"
+                                },
+                                {
+                                    "tipo": "Certificado",
+                                    "nombre": "Curso de 50 horas"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.1.1 Actas de reunión",
+                            "evidencias": [
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Actas de reunión con el asesor para el diseño e implementación del SG-SST"
+                                },
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Actas de reunión con la ARL"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.2. Responsabilidades en el SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Responsabilidades frente al SG-SST firmadas por todos los empleados"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Carta de nombramiento del responsable del sistema"
+                                },
+                                {
+                                    "tipo": "Certificado",
+                                    "nombre": "Curso de 50 horas del responsable del sistema"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de socialización de responsabilidades (fotos, listados de asistencia)"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.3. Asignación de recursos para el SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de asignación de recursos para el desarrollo del SG-SST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Presupuesto de inversiones"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.4. Afiliación al Sistema General de Riesgos Laborales",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Pago de aportes a seguridad social de los empleados"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Copia de afiliaciones a seguridad social de contratistas"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Afiliación de aprendices al sistema de salud"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.6 Conformación COPASST / Vigía",
+                            "evidencias": [
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Acta de creación del COPASST o designación del Vigía de Seguridad y Salud en el Trabajo"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la elección democrática de los integrantes del comité"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Publicación de los resultados de la elección del comité"
+                                },
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Actas de las reuniones del COPASST"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de capacitación al COPASST en funciones y responsabilidades"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de capacitación al COPASST en inspecciones de seguridad"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de capacitación al COPASST en auditoría"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de capacitación al COPASST en investigación de accidentes de trabajo"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Acta de nombramiento del presidente del COPASST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Acta de nombramiento del secretario del COPASST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la elección democrática del presidente y secretario"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la conformación del comité según el número de trabajadores (2 representantes del empleador y 2 de los empleados con suplentes, o 1 por parte + suplente para empresas con menos de 20 empleados)"
+                                },
+                                {
+                                    "tipo": "Cronograma",
+                                    "nombre": "Cronograma de trabajo del COPASST"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de gestiones y acciones realizadas por el COPASST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Publicación de los resultados de la elección del COPASST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de los votos de la elección de los representantes de los empleados"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de gestiones y actividades adelantadas por el COPASST (inspecciones de seguridad, auditorías, seguimiento al presupuesto, plan de trabajo, indicadores, investigaciones, jornadas de la salud)"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de las capacitaciones realizadas a los miembros del COPASST"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.8 Conformación Comité de Convivencia",
+                            "evidencias": [
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Acta de creación del Comité de Convivencia Laboral"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la elección democrática de los integrantes del comité"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Publicación de los resultados de la elección del comité"
+                                },
+                                {
+                                    "tipo": "Acta",
+                                    "nombre": "Actas de las reuniones del comité"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de la realización de reuniones mínimo cada tres meses"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Cartas de confidencialidad firmadas por los integrantes del comité"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Carta de asignación del presidente del comité"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Carta de asignación del secretario del comité"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la elección democrática del presidente y secretario"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de conformación del comité según número de trabajadores (2 representantes del empleador y 2 de los empleados con suplentes; o 1 por parte + suplente en empresas menores de 20 empleados)"
+                                },
+                                {
+                                    "tipo": "Informe",
+                                    "nombre": "Informe trimestral de la gestión del Comité de Convivencia conforme a la Resolución 652 de 2012, artículo 8"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de investigaciones por acoso laboral realizadas"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de investigaciones por acoso laboral donde se escucha a las partes involucradas de manera individual"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de que, cuando se han presentado denuncias, se han realizado las investigaciones del caso"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencia de actividades de capacitación a los miembros del comité en resolución de conflictos y comunicación asertiva"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias de capacitación al comité en prevención del acoso laboral e investigación de acoso"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Formato de reporte de presunto acoso laboral"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Manejo reservado y confidencial de la documentación gestionada por el comité"
+                                },
+                                {
+                                    "tipo": "Cronograma",
+                                    "nombre": "Cronograma de trabajo anual del Comité de Convivencia"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de los votos de la elección de los representantes de los empleados"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Desarrollo de medidas preventivas y correctivas frente al acoso laboral"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Planes de mejora formulados y evidencia de su respectivo seguimiento"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Recursos 10%",
+                    "descripcion": "Capacitación en el Sistema de Gestión de la Seguridad y la Salud en el Trabajo (6%)",
+                    "actividades": [
+                        {
+                            "code": "1.2.1 Programa Capacitación, inducción y reinducción del SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de que la empresa cuenta con un programa de capacitación en temas de SST"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.2.2 Inducción y reinducción en SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Actividades de inducción y reinducción, las cuales deben estar incluidas en el programa de capacitación, dirigidas a todos los trabajadores, independientemente de su forma de vinculación y/o contratación, de manera previa al inicio de sus labores."
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Listado de asistencia, memoria de la inducción"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Evidencias del curso de 50 horas de los integrantes de: copasst, brigada, comité de convivencia, responsable del sistema, representante legal."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Política de Seguridad y Salud en el Trabajo (1%)",
+                    "actividades": [
+                        {
+                            "code": "2.1.1 Política del Sistema de Gestión de Seguridad y Salud en el Trabajo SG-SST firmada, fechada y comunicada al COPASST/Vigía",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Política del SG-SST alineada con la metas objetivos e indicadores de gestión; esta firmada, fechada y comunicada al COPASST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia del nivel de comprensión de la política y objetivos de SST por parte de los empleados"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Objetivos del Sistema (1%)",
+                    "actividades": [
+                        {
+                            "code": "2.2.1 Objetivos del sistema, claros, medibles, cuantificables y con metas",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de alineación de los objetivos del SG-SST con la política del sistema"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Evaluación inicial del SG-SST (1%)",
+                    "actividades": [
+                        {
+                            "code": "2.3.1 Evaluación e identificación de prioridades",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Identificación y priorización de brechas y oportunidades de mejora del SG-SST"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Plan Anual de Trabajo (2%)",
+                    "actividades": [
+                        {
+                            "code": "2.4.1 Plan que identifica objetivos, metas, responsabilidad, recursos con cronograma y firmado",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia que la empresa cuenta con un plan de trabajo anual y este contiene: Riesgo, meta, cronograma, recursos, responsable, firmas de ambos"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Plan de trabajo anual con programa de auditoria"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "El plan de trabajo anual con la priorización de las intervenciones locativas que en materia de SST se deben realizar"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "El plan de trabajo anual cuenta con programa de emergencias"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Programa de prevención y protección contra caída de alturas y las evidencias de su implementación"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la inspección de equipos de protección personal para trabajo en alturas"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Plan de rescate en alturas documentado y las evidencias de su socialización"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Permisos para trabajo en alturas"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento de prevención y protección contra caída de alturas y plan de rescate en alturas"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento de plan de rescate en alturas y socialización con los empleados"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "El plan de trabajo anual cuenta con programa de vigilancia epidemiológica"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Certificación de características técnicas de diseño y calidad de los elementos de protección personal para trabajo en alturas emitida por los fabricantes o proveedores"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Conservación de la documentación (2%)",
+                    "actividades": [
+                        {
+                            "code": "2.5.1 Archivo o retención documental del Sistema de Gestión en Seguridad y Salud en el Trabajo SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Listado maestro de documentos del Sistema"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Gestión y documentación del control de cambio en los procesos de la organización, verifique el o los cambio(s) en el sitio de implementación contra lo documental."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Rendición de cuentas (1%)",
+                    "actividades": [
+                         {
+                            "code": "2.6.1 Rendición sobre el desempeño. Se realiza medición de indicadores",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Redención de cuentas anual sobre el desempeño del SG-SST"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Normatividad nacional vigente y aplicable en materia de seguridad y salud en el trabajo (2%)",
+                    "actividades": [
+                         {
+                            "code": "2.7.1 Matriz legal",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Identificación y gestion de los requisitos legales aplicables en SST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Reglamento interno de trabajo actualizado en el capítulo de SST y acoso laboral"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Comunicación (1%)",
+                    "actividades": [
+                         {
+                            "code": "2.8.1 Mecanismos de comunicación, auto reporte en Sistema de Gestión de Seguridad y Salud en el Trabajo SG-SST. ",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Mecanismos de comunicación interna y externa del SG-SST"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Adquisiciones (1%)",
+                    "actividades": [
+                         {
+                            "code": "2.9.1 Identificación, evaluación, para adquisición de productos y servicios en Sistema de Gestión de Seguridad y Salud en el Trabajo SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento para garantizar que se identifiquen y evalúen en las especificaciones relativas a las compras o adquisiciones de productos y servicios que presenten implicaciones en SST. "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Matriz de riesgos y peligros de sus contratistas asociados al objeto de lo contratado"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Los contratistas (+de un mes) presentan copia del certificado médico pre ocupacional "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Los contratistas son incluidos en el Sistema de Vigilancia Epidemiológica de la empresa"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Contratación (2%",
+                    "actividades": [
+                         {
+                            "code": "2.10.1 evaluación mínimo 1 vez al año a los proveedores críticos ",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "evaluación de proveedores críticos en SST"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión Integral del Sistema de Gestión De La Seguridad y Salud en el Trabajo (15%)",
+                    "descripcion": "Gestión del cambio (1%)",
+                    "actividades": [
+                         {
+                            "code": "2.11.1 Evaluación del impacto de cambios internos y externos en el Sistema de Gestión de Seguridad y Salud en el Trabajo SG-SST (Tiene Procedimiento de Gestión del Cambio)",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "evaluación del impacto de cambios internos y externos en el SG-SST"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "HACER",
+            "subdivision": [
+                {
+                    "nombre": "Gestión de la Salud (20%)",
+                    "descripcion": "Condiciones de salud en el trabajo (9%)",
+                    "actividades": [
+                        {
+                            "code": "3.1.1 Descripción sociodemográfica y Diagnóstico de las condiciones de salud de los trabajadores",
+                            "evidencias": [
+                                {
+                                    "tipo": "Actividad",
+                                    "nombre": "Informe de perfil sociodemográfico"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Matriz de exámenes médicos ocupacionales"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Informe de condiciones de salud a partir de la realización de los exámenes médicos ocupacionales"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.2 Actividades de medicina del trabajo y de prevención y promoción de la Salud. ",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de las actividades de promoción de la salud y prevención de la enfermedad"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.3 Se informa al médico de exámenes médicos sobre los perfiles de cargo.",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "En los profesiogramas está indicado los riesgos, exámenes médicos y elementos de protección personal"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.4 Realización de los exámenes médicos ocupacionales: peligros, periodicidad.(ingreso, periódico, post incapacidad, cambio de oficio, retiro). ",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencias de realización de los exámenes médicos ocupacionales"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Documento que evidencia la frecuencia de los exámenes"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.5 Custodia de Historias Clínicas",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Consentimiento por parte de los empleados para el manejo de información referente a sus historias clínicas, especialmente para la gestión de las incapacidades"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.6 Restricciones y recomendaciones médico laborales",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento de reincorporación laboral, Restricciones y recomendaciones médico laborales"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.7 Estilos de vida y entornos saludables (controles tabaquismo, alcoholismo, farmacodependencia y otros)",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Programa de prevención de consumo de sustancias psicoactivas, alcoholismo y tabaquismo."
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Programa de hábitos de vida saludable"
+                                },
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Programa para fomentar los estilos de vida y trabajo saludables"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.1.8 Las instalaciones de la empresa cuentan con agua potable, servicios sanitarios",
+                            "evidencias": [
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "instalaciones de la empresa cuentan con agua potable, servicios sanitarios"
+                                }
+                            ]
+                        },  
+                        {
+                            "code": "Programa de eliminación adecuada de residuos sólidos, líquidos o gaseosos",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Programa de eliminación adecuada de residuos sólidos, líquidos o gaseosos"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión de la Salud (20%)",
+                    "descripcion": "Registro, Reporte e Investigación de Enfermedades Laborales, los incidentes y Accidentes de Trabajo. (5%)",
+                    "actividades": [
+                        {
+                            "code": "3.2.1. Reporte de los Accidentes de Trabajo y Enfermedad Laboral a la Arl, Eps y Dirección Territorial al Ministerio de Trabajo",
+                            "evidencias": [
+                                {
+                                    "tipo": "Evidencia",
+                                    "nombre": "Procedimiento y para realizar el registro, reporte e investigación de incidentes y accidentes de trabajo de sus trabajadores y contratistas."
+                                }
+                            ]
+                        },  
+                        {
+                            "code": "3.2.2. Investigación de Accidentes, Incidentes y Enfermedad Laboral",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia que el equipo investigador, está capacitado en investigación de incidentes y accidentes de trabajo cumpliendo con el Decreto 1530 de 1996 artículo 4 y la resolución 1401 de 2007."
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se tiene constancia de las medidas adoptadas para disminuir accidentalidad o enfermedades"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.2.3. Registro y Análisis Estadístico de Incidentes de Trabajo, Accidentes de Trabajo y Enfermedad Laboral",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Análisis estadístico de accidentes de trabajo y enfermedad laboral durante el último año "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "En las estadísticas de accidentalidad de la empresa se incluyen los accidentes y enfermedades de los contratistas (solo lo relacionado con el objeto del contrato)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión de la Salud (20%)",
+                    "descripcion": "Mecanismos de Vigilancia de las Condiciones de Salud de los Trabajadores (6%)",
+                    "actividades": [
+                        {
+                            "code": "3.3.1 Medición de la Severidad de los Accidentes de Trabajo y Enfermedad Laboral",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición de la severidad de los accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.3.2 Medición de la Frecuencia de los Incidentes de Trabajo, Accidentes de Trabajo y Enfermedad Laboral.",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición de la frecuencia de los incidentes de trabajo, accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.3..3. Medición de la Mortalidad de Accidentes de Trabajo y Enfermedad Laboral",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición de la mortalidad de accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.3.4. Medición de la Prevalencia de Incidentes de Trabajo, Accidentes de Trabajo y Enfermedad Laboral..",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición de la prevalencia de incidentes de trabajo, accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.3.5 Medición de la Incidencia de Incidentes de Trabajo, Accidentes de Trabajo y Enfermedad Laboral.",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición de la incidencia de incidentes de trabajo, accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "3.3.6. Medición del Ausentismo por Incidentes de Trabajo, Accidentes de Trabajo y Enfermedad Laboral.",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la medición del ausentismo por incidentes de trabajo, accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión de Peligros y Riesgos (30%)",
+                    "descripcion": "Identificación de Peligros, Evaluación y Valoración de los Riesgos (15%)",
+                    "actividades": [
+                        {
+                            "code": "4.1.1. Metodología para la identificación, evaluación y valoración de peligros",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "identificación y registro de los peligros y riesgos en el trabajo a los que están expuestos los trabajadores, dispone del documento de condiciones de trabajo."
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de capacitación sobre los trabajo en alturas"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.1.2. Se realiza identificación de Peligros con la participación de todos los niveles de la empresa.",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la participación de los trabajadores en la identificación de peligros"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.1.3. Identificación y priorización de la naturaleza de los peligros (metodología adicional, cancerígenos y otros)",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la identificación y priorización de la naturaleza de los peligros"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.1.4. Realización mediciones Ambientales:_ Químicas. Físicas y biológicas (Si se tienen estos factores)",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la realización de mediciones ambientales"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión de Peligros y Riesgos (30%)",
+                    "descripcion": "Medidas de prevención y control para intervenir los peligros y riesgos (15%)",
+                    "actividades": [
+                                               {
+                            "code": "4.2.1 Se implementan las medidas de prevención y control de peligros",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Medición de riesgo psicosocial y controles"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "En el plan de trabajo se incluye los controles priorizados en la matriz"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.2.2 Se verifica aplicación de las medidas de prevención y control (Auditorias internas)",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de auditorias internas realizadas al SG-SST"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.2.3 Hay procedimientos, instructivos, fichas, protocolos",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Reglamento de SST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Normas de seguridad por puestos críticos ARO, ATS"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.2.4 Inspecciones a instalaciones, maquinaria o equipos",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se ha realizado durante el ultimo año una inspección al uso y estado de los elementos de protección personal"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento para la realización de inspecciones de seguridad"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia que la empresa realiza inspecciones de seguridad de condiciones inseguras "
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.2.5 Mantenimiento periódico de instalaciones, equipos, máquinas, herramientas",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Procedimiento para el mantenimiento de las instalaciones, equipos y herramientas y corrección de condiciones inseguras"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Planes de mantenimiento de instalaciones, equipos y herramientas "
+                                }
+                            ]
+                        },
+                        {
+                            "code": "4.2.6 Entrega de Elementos de Protección Persona EPP, se verifica con contratistas y subcontratistas",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia que la empresa cuente con un plan de suministro y reposición de equipos o elementos de protección "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Constancia del fabricante y/o proveedor del elemento de seguridad, donde se certifique el cumplimiento de la norma bajo la cual debió haber sido diseñado"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de perfil del cargo se indica si requiere o no elementos de protección personal"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Gestión de Peligros y Riesgos (30%)",
+                    "descripcion": "Gestión amenazas (10%)",
+                    "actividades": [
+                        {
+                            "code": "5.1.1 Plan de Prevención y Preparación ante emergencias",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de los simulacros realizados"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Ubicación del punto de encuentro"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Ruta de evacuación y plano de las instalaciones"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia del plan de emergencias documentado"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Ubicación de los con extintores "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Alarma y alerta para evacuación, evidencia "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se cuenta con un plan maestro de emergencias por escrito"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Registro de Análisis de Amenazas, Vulnerabilidad y Riesgo"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Directorio Telefónico Emergencias. "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Coordinador General de Emergencia"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Personal entrenado en primeros auxilios "
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se cuenta con un programa de emergencias"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se cuenta con el protocolo para realización de simulacros de evacuación"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Señalización de seguridad"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "5.1.2 Brigada de prevención conformada, capacitada y dotada",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Conformación de la brigada de Emergencia"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Plan de capacitación a los integrantes de la brigada de emergencia"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Protocolos y documentación para conformación y entrenamiento de brigada"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "VERIFICAR",
+            "subdivision": [
+                {
+                    "nombre": "Verificación del SG-SST (5%)",
+                    "descripcion": "Gestión y resultados del SG-SST (5%)",
+                    "actividades": [
+                        {
+                            "code": "6.1.1 Indicadores estructura, proceso y resultado",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se cuenta con una Matriz de indicadores del SG-SST: Este documento a su vez incluirá: 1. Matriz de indicadores que evalúan la estructura del sistema de gestión de la seguridad y salud en el trabajo SG-SST. 2. Matriz de indicadores que evalúan el proceso del sistema de gestión de la seguridad y salud en el trabajo SG-SST; 3. Indicadores que evalúan el resultado del sistema de gestión de la seguridad y salud en el trabajo SG-SST"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Existe evidencia del seguimiento a los indicadores del SGSST"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "6.1.2 Las empresa adelanta auditoría por lo menos una vez al año",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "La organización demuestra los resultados del programa de auditoría y la revisión por la alta dirección. Revisar metodología, periodicidad, documentación y divulgación de estas actividades"
+                                },
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Existen registros de una auditoria integral del estado de implementación del Sistema"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "6.1.3 Revisión anual por la alta dirección, resultados y alcance de la auditoría",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se realiza revisión por la dirección y esta incluye las estadísticas de ATEL"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "6.1.4 El COPASST participa en la auditoría del Sistema",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la participación del COPASST en la auditoría del Sistema"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ACTUAR",
+            "subdivision": [
+                {
+                    "nombre": "Mejoramiento (10%)",
+                    "descripcion": "Acciones preventivas y correctivas con base en los resultados del SG-SST (10%)",
+                    "actividades": [
+                         {
+                            "code": "7.1.1 Definir acciones de Promoción y Prevención con base en resultados del Sistema de Gestión de Seguridad y Salud en el Trabajo SG-SST",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de las acciones de promoción y prevención definidas con base en los resultados del SG-SST"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "7.1.2 Toma de medidas correctivas, preventivas y de mejora",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de las acciones correctivas, preventivas y de mejora definidas con base en los resultados de auditorías, revisiones por la dirección, investigaciones de incidentes y accidentes de trabajo y enfermedad laboral"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "7.1.3 Ejecución de acciones preventivas, correctivas y de mejora de la investigación de incidentes, accidentes de trabajo y enfermedad laboral",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Se tienen documentadas acciones correctivas y preventivas a partir de los resultados del desempeño del Sistema"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "7.1.4 Se implementan las medidas y acciones correctivas de autoridades y de ARL",
+                            "evidencias": [
+                                {
+                                    "tipo": "Documento",
+                                    "nombre": "Evidencia de la implementación de las medidas y acciones correctivas indicadas por las autoridades competentes y la ARL"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

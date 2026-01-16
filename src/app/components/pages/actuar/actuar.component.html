@@ -1,0 +1,31 @@
+
+<a routerLink="/" class="btn-volver">
+  <span class="arrow-left">&#8592;</span> Volver
+</a>
+<div class="planear-container">
+  <h2 class="titulo-fase"><span class="icon-fase">🏃‍♂️</span>ACTUAR</h2>
+  <div *ngIf="actuar">
+    <div *ngFor="let sub of actuar.subdivision; let i = index" class="subdivision">
+      <div class="subdivision-header" (click)="toggleSubdivision(i)">
+        <span class="subdivision-nombre">{{ sub.nombre }}</span>
+        <span class="subdivision-desc">{{ sub.descripcion }}</span>
+        <span class="arrow">{{ subdivisionesAbiertas[i] ? '\u25bc' : '\u25ba' }}</span>
+      </div>
+      <div *ngIf="subdivisionesAbiertas[i]" class="actividades-list">
+        <div *ngFor="let act of sub.actividades; let j = index" class="actividad">
+          <div class="actividad-header" (click)="toggleActividad(i, j)">
+            <span class="actividad-code">{{ act.code }}</span>
+            <span class="arrow">{{ actividadesAbiertas[i][j] ? '\u25bc' : '\u25ba' }}</span>
+          </div>
+          <div *ngIf="actividadesAbiertas[i][j]" class="evidencias-list">
+            <div *ngFor="let ev of act.evidencias" class="evidencia">
+              <span class="evidencia-nombre">{{ ev.nombre }}</span>
+              <span class="evidencia-tipo">({{ ev.tipo }})</span>
+            </div>
+            <div class="linea-separadora"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
