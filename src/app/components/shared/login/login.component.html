@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-logo">
+      <img src="../../../../../../assets/welcome.png" alt="Logo SGSST" />
+    </div>
+    <h2 class="login-title">Bienvenido al SGSST</h2>
+    <p class="login-subtitle">Accede con tu cuenta institucional autorizada</p>
+    <button class="login-google-btn" (click)="loginWithGoogle()" [disabled]="loading">
+      <img src="https://developers.google.com/identity/images/g-logo.png" width="22" alt="Google logo" />
+      <span>Iniciar sesión con Google</span>
+    </button>
+    <div *ngIf="message" class="login-message">{{ message }}</div>
+  </div>
+  <div *ngIf="loading" class="login-overlay">
+    <div class="login-overlay-content">
+      <span class="loader"></span>
+      <span class="login-loading-text">Validando acceso...</span>
+    </div>
+  </div>
+</div>

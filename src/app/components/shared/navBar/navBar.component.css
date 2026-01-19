@@ -1,0 +1,127 @@
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: 0;
+}
+.navbar-logo-img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+	padding: 4px;
+}
+
+.navbar {
+	width: 98vw;
+    margin: 0 auto;
+	/**background: #ffffff2d;**/
+    border-radius: 12px;
+	color: #fff;
+	padding: 12px 0;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.navbar-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 2200px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+.navbar-title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-user {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.navbar-user-photo {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	object-fit: cover;
+}
+.navbar-user-name {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* Botón cerrar sesión en Home */
+/* Botón cerrar sesión más suave y moderno */
+.btn-logout {
+	background: linear-gradient(90deg, #ff5252 0%, #ff867f 100%);
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	padding: 7px 22px;
+	margin-left: 18px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(255, 82, 82, 0.12);
+	transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+	outline: none;
+}
+.btn-logout:hover {
+	background: linear-gradient(90deg, #ff1744 0%, #ff616f 100%);
+	box-shadow: 0 4px 16px rgba(255, 82, 82, 0.18);
+	transform: translateY(-2px) scale(1.04);
+}
+
+/* Modal de logout */
+.modal-logout {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.35);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2000;
+}
+.modal-logout-content {
+	background: #fff;
+	border-radius: 12px;
+	padding: 32px 28px 24px 28px;
+	min-width: 320px;
+	box-shadow: 0 4px 24px 0 rgba(25, 118, 210, 0.18);
+	text-align: center;
+}
+.modal-logout-content p {
+	color: #222;
+	font-size: 1.08rem;
+	margin-bottom: 22px;
+	font-weight: 500;
+}
+.modal-logout-content button {
+	margin: 0 10px;
+	padding: 8px 18px;
+	border-radius: 6px;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+	background: #1976d2;
+	color: #fff;
+	transition: background 0.2s;
+}
+.modal-logout-content button:first-child {
+	background: #e53935;
+}
+.modal-logout-content button:first-child:hover {
+	background: #b71c1c;
+}
+.modal-logout-content button:last-child:hover {
+	background: #1565c0;
+}

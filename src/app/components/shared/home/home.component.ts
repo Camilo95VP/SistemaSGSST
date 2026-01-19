@@ -1,5 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
+import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
+import { environment } from 'src/environments/environments';
 import { HttpClient } from '@angular/common/http';
 
 interface RutaActividad {
@@ -21,11 +23,33 @@ export class HomeComponent implements OnInit {
   modalVisible: boolean = false;
   rutaSeleccionada: RutaActividad | null = null;
   mostrarConfirmacionDescarga: boolean = false;
+  user: User | null = null;
+  showWelcome: boolean = false;
+  welcomeMsg: string = '';
+  mostrarConfirmacionLogout: boolean = false;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private auth: Auth) { }
+  confirmarLogout() {
+    this.mostrarConfirmacionLogout = true;
+  }
+
+  async logout() {
+    await this.auth.signOut();
+    window.location.href = '/';
+  }
 
   ngOnInit() {
     this.cargarActividades();
+    onAuthStateChanged(this.auth, (user) => {
+      this.user = user;
+      if (user && user.email && environment.authorizedEmails.includes(user.email)) {
+        this.showWelcome = true;
+        this.welcomeMsg = `¡Bienvenido, ${user.displayName || user.email}!`;
+      } else {
+        this.showWelcome = false;
+        this.welcomeMsg = '';
+      }
+    });
   }
 
   cargarActividades() {

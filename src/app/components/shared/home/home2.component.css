@@ -94,7 +94,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 20vh;
-    background-color: #05050575;
+    /**background-color: #05050575;**/
     margin: 0 auto;
     margin-top: 8%;
     padding: 10px 30px 30px 30px;

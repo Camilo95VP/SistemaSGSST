@@ -1,3 +1,20 @@
-<p>
-  navBar works!
-</p>
+<nav class="navbar">
+  <div class="navbar-content">
+    <div class="navbar-brand">
+      <img src="../../../../assets/LOGO.png" alt="Logo SGSST" class="navbar-logo-img" />
+      <span class="navbar-title">SGSST</span>
+    </div>
+    <div *ngIf="user" class="navbar-user">
+      <img *ngIf="user.photoURL" [src]="user.photoURL" alt="Foto de usuario" class="navbar-user-photo" />
+      <span class="navbar-user-name">{{ user.displayName || user.email }}</span>
+      <button class="btn-logout" (click)="confirmarLogout()">Salir</button>
+    </div>
+    <div *ngIf="mostrarConfirmacionLogout" class="modal-logout">
+      <div class="modal-logout-content">
+        <p>¿Seguro que deseas cerrar sesión?</p>
+        <button (click)="logout()">Sí, cerrar sesión</button>
+        <button (click)="mostrarConfirmacionLogout = false">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</nav>
