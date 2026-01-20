@@ -1,8 +1,8 @@
-
 import { Component, OnInit } from '@angular/core';
-import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
 import { environment } from 'src/environments/environments';
 import { HttpClient } from '@angular/common/http';
+// CAMBIO: Importamos la versión compat
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 interface RutaActividad {
   actividad: string;
@@ -23,24 +23,26 @@ export class HomeComponent implements OnInit {
   modalVisible: boolean = false;
   rutaSeleccionada: RutaActividad | null = null;
   mostrarConfirmacionDescarga: boolean = false;
-  user: User | null = null;
+  user: any = null; 
   showWelcome: boolean = false;
   welcomeMsg: string = '';
   mostrarConfirmacionLogout: boolean = false;
 
-  constructor(private http: HttpClient, private auth: Auth) { }
+  constructor(private http: HttpClient, private afAuth: AngularFireAuth) { }
+
   confirmarLogout() {
     this.mostrarConfirmacionLogout = true;
   }
 
   async logout() {
-    await this.auth.signOut();
+    await this.afAuth.signOut();
     window.location.href = '/';
   }
 
   ngOnInit() {
     this.cargarActividades();
-    onAuthStateChanged(this.auth, (user) => {
+  
+    this.afAuth.authState.subscribe((user) => {
       this.user = user;
       if (user && user.email && environment.authorizedEmails.includes(user.email)) {
         this.showWelcome = true;
@@ -96,9 +98,7 @@ export class HomeComponent implements OnInit {
 
   descargarScriptCrearRuta() {
     if (!this.rutaSeleccionada) { return; }
-    // Construir la ruta con nombres seguros para carpetas y mantener tildes
     const clean = (str: string) => (str || '').normalize('NFC').replace(/[<>:"/\\|?*]/g, '').replace(/\s+/g, ' ').trim();
-    // Duplicar % para que el .bat lo interprete como literal
     const escapeBat = (str: string) => str.replace(/%/g, '%%');
     const ruta = [
       escapeBat(clean(this.rutaSeleccionada.fase)),
@@ -106,9 +106,7 @@ export class HomeComponent implements OnInit {
       escapeBat(clean(this.rutaSeleccionada.code)),
       escapeBat(clean(this.rutaSeleccionada.actividad))
     ].join('\\');
-    // Script .bat para crear la ruta completa en Descargas (mkdir /p para subcarpetas)
     const script = `@echo off\r\nchcp 65001 >nul\r\ncd /d %USERPROFILE%\\Downloads\r\nmkdir "${ruta}"\r\n`;
-    // Agregar BOM UTF-8 para Windows
     const bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
     const blob = new Blob([bom, script], { type: 'application/octet-stream' });
     const url = window.URL.createObjectURL(blob);

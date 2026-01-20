@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth'; // Importación de compatibilidad
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,5 @@ import { Auth } from '@angular/fire/auth';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private auth = inject(Auth); 
+  private afAuth = inject(AngularFireAuth); 
 }

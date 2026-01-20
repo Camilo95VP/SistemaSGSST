@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
+import { Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-navBar',
@@ -7,13 +8,13 @@ import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
   styleUrls: ['./navBar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  user: User | null = null;
+  user: any = null; 
   mostrarConfirmacionLogout: boolean = false;
 
-  constructor(private auth: Auth) { }
+  constructor(private afAuth: AngularFireAuth, private router: Router) { }
 
   ngOnInit() {
-    onAuthStateChanged(this.auth, (user) => {
+    this.afAuth.authState.subscribe((user) => {
       this.user = user;
     });
   }
@@ -23,7 +24,12 @@ export class NavBarComponent implements OnInit {
   }
 
   async logout() {
-    await this.auth.signOut();
-    window.location.href = '/';
+    try {
+      await this.afAuth.signOut();
+      this.router.navigate(['/']);
+    } catch (error) {
+      console.error('Error al cerrar sesión:', error);
+      window.location.href = '/';
+    }
   }
 }

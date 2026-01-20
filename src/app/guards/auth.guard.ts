@@ -1,21 +1,26 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router, UrlTree } from '@angular/router';
-import { Auth } from '@angular/fire/auth';
+// CAMBIO: Importamos la versión compat
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { environment } from 'src/environments/environments';
-import { map } from 'rxjs/operators';
-import { from, Observable } from 'rxjs';
+import { map, take } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
-  constructor(private auth: Auth, private router: Router) {}
+  // Inyectamos AngularFireAuth en lugar de Auth
+  constructor(private afAuth: AngularFireAuth, private router: Router) {}
 
   canActivate(): Observable<boolean | UrlTree> {
-    return from(Promise.resolve(this.auth.currentUser)).pipe(
-      map(user => {
-        if (user && user.email && environment.authorizedEmails.includes(user.email)) {
+    // Usamos authState que es el observable estándar de la versión compat
+    return this.afAuth.authState.pipe(
+      take(1),
+      map(firebaseUser => {
+        if (firebaseUser && firebaseUser.email && environment.authorizedEmails.includes(firebaseUser.email)) {
           return true;
         }
-        return this.router.createUrlTree(['']);
+        // Si no está logueado o no es correo autorizado, va al login
+        return this.router.createUrlTree(['']); 
       })
     );
   }
