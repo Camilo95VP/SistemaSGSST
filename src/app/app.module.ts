@@ -39,7 +39,11 @@ import { LoginComponent } from './components/shared/login/login.component';
     HttpClientModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth())
+    provideAuth(() => {
+        const auth = getAuth();
+        console.log('Firebase Auth Initialized');
+        return auth;
+    })
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

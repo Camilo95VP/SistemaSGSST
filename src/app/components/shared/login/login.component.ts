@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Auth, signInWithPopup, GoogleAuthProvider, User } from '@angular/fire/auth';
 import { environment } from 'src/environments/environments';
 import { Router } from '@angular/router';
+import { getAuth } from 'firebase/auth';
 
 @Component({
   selector: 'app-login',
