@@ -15,6 +15,8 @@ export const environment = {
         'juan.castaneda@sofka.com.co', 
         'danielaquintero19@gmail.com',
         'eduarcastanedam@gmail.com',
-        'danielaquinterojimenez19@gmail.com'
+        'danielaquinterojimenez19@gmail.com',
+        'danielaquinteroj6@gmail.com',
+        'orangesst1@gmail.com'
     ]
 };
