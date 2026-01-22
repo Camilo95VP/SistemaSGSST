@@ -20,7 +20,6 @@ export const environment = {
     authorizedEmails: [
         'camiloflstudio@gmail.com',
         'eduarcastanedam@gmail.com',
-        'juan.castaneda@sofka.com.co', 
         'orangesst1@gmail.com',
         'eduarcastanedam2@gmail.com'
     ]
