@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 // --- IMPORTACIONES DE COMPATIBILIDAD (SOLUCIÓN DEFINITIVA) ---
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environments';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -42,7 +43,8 @@ import { AuthGuard } from './guards/auth.guard';
     // La inicialización vía AngularFireModule garantiza que 
     // todos los componentes internos de Firebase se registren al arrancar.
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

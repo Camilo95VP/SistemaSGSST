@@ -4,6 +4,7 @@ export const environment = {
     firebase: {
         apiKey: "AIzaSyB5qI5bEC-qflI7zxv_Hj4Yqn-lLg0wXUY",
         authDomain: "sgsst-c988a.firebaseapp.com",
+        databaseURL: "https://sgsst-c988a-default-rtdb.firebaseio.com",
         projectId: "sgsst-c988a",
         storageBucket: "sgsst-c988a.appspot.com",
         messagingSenderId: "988833698347",
@@ -13,10 +14,8 @@ export const environment = {
     authorizedEmails: [
         'camiloflstudio@gmail.com', 
         'juan.castaneda@sofka.com.co', 
-        'danielaquintero19@gmail.com',
         'eduarcastanedam@gmail.com',
-        'danielaquinterojimenez19@gmail.com',
-        'danielaquinteroj6@gmail.com',
-        'orangesst1@gmail.com'
+        'orangesst1@gmail.com',
+        'eduarcastanedam2@gmail.com'
     ]
 };

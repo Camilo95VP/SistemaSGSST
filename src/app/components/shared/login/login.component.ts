@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environments';
 // IMPORTACIONES DE COMPATIBILIDAD
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import firebase from 'firebase/compat/app'; // Necesario para el GoogleAuthProvider
+import { SessionService } from 'src/app/services/session.service';
 
 @Component({
   selector: 'app-login',
@@ -16,8 +17,12 @@ export class LoginComponent implements OnInit {
   message: string = '';
   loading: boolean = false;
 
-  // Inyectamos AngularFireAuth (Compat)
-  constructor(private afAuth: AngularFireAuth, private router: Router) { }
+  // Inyectamos AngularFireAuth (Compat) y SessionService
+  constructor(
+    private afAuth: AngularFireAuth, 
+    private router: Router,
+    private sessionService: SessionService
+  ) { }
 
   ngOnInit() {}
 
@@ -38,8 +43,20 @@ export class LoginComponent implements OnInit {
       const email = this.user?.email || '';
       
       if (environment.authorizedEmails.includes(email)) {
-        this.message = `¡Bienvenido, ${this.user?.displayName || email}!`;
-        this.router.navigate(['/home']);
+        // Verificar si ya existe una sesión activa para este correo
+        const hasSession = await this.sessionService.hasActiveSession(email);
+        
+        if (hasSession) {
+          // Si ya existe una sesión activa, cerrar sesión y mostrar error
+          this.message = 'No tiene permitido iniciar sesión en este momento';
+          await this.afAuth.signOut();
+          this.user = null;
+        } else {
+          // Si no existe sesión activa, registrar la nueva sesión
+          await this.sessionService.registerSession(email, this.user.uid);
+          this.message = `¡Bienvenido, ${this.user?.displayName || email}!`;
+          this.router.navigate(['/home']);
+        }
       } else {
         this.message = 'Usuario/correo no autorizado.';
         await this.afAuth.signOut();
