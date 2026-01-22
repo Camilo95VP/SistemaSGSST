@@ -52,6 +52,25 @@ export class HomeComponent implements OnInit {
         this.welcomeMsg = '';
       }
     });
+      // Mostrar mensaje de bienvenida solo si el usuario acaba de iniciar sesión
+      const justLoggedIn = sessionStorage.getItem('justLoggedIn');
+      this.afAuth.authState.subscribe((user) => {
+        this.user = user;
+        if (user && user.email && environment.authorizedEmails.includes(user.email)) {
+          if (justLoggedIn === 'true') {
+            this.showWelcome = true;
+            this.welcomeMsg = `¡Bienvenido, ${user.displayName || user.email}!`;
+            setTimeout(() => { this.showWelcome = false; }, 3500);
+            sessionStorage.setItem('justLoggedIn', 'false');
+          } else {
+            this.showWelcome = false;
+            this.welcomeMsg = '';
+          }
+        } else {
+          this.showWelcome = false;
+          this.welcomeMsg = '';
+        }
+      });
   }
 
   cargarActividades() {

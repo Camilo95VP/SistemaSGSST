@@ -1,7 +1,14 @@
 <app-navBar></app-navBar>
-<div *ngIf="showWelcome" class="welcome-msg">
-  {{ welcomeMsg }}
-  <button class="btn-logout" (click)="confirmarLogout()">Cerrar sesión</button>
+<div *ngIf="showWelcome" class="welcome-modal-overlay">
+  <div class="welcome-modal">
+    <div class="welcome-modal-header">
+      <span class="welcome-modal-icon">🎉</span>
+      <h2>¡Bienvenido!</h2>
+    </div>
+    <div class="welcome-modal-body">
+      <p>{{ welcomeMsg }}</p>
+    </div>
+  </div>
 </div>
 <div *ngIf="mostrarConfirmacionLogout" class="modal-logout">
   <div class="modal-logout-content">

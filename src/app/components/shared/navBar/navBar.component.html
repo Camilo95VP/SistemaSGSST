@@ -7,6 +7,9 @@
     <div *ngIf="user" class="navbar-user">
       <img *ngIf="user.photoURL" [src]="user.photoURL" alt="Foto de usuario" class="navbar-user-photo" />
       <span class="navbar-user-name">{{ user.displayName || user.email }}</span>
+      <a *ngIf="isAdmin" routerLink="/admin" routerLinkActive="active" class="config-link">
+        <span class="config-icon"></span> Configurar
+      </a>
       <button class="btn-logout" (click)="confirmarLogout()">Salir</button>
     </div>
     <div *ngIf="mostrarConfirmacionLogout" class="modal-logout">

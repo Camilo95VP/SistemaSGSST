@@ -1,0 +1,89 @@
+<div class="admin-container">
+  <div class="admin-header">
+    <h1>Panel de Administración</h1>
+    <p class="subtitle">Gestión de Usuarios Autorizados</p>
+  </div>
+
+  <div *ngIf="!isAdmin" class="alert alert-error">
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="isAdmin" class="admin-content">
+    <!-- Mensaje de feedback -->
+    <div *ngIf="message" class="alert" [ngClass]="messageType === 'success' ? 'alert-success' : 'alert-error'">
+      {{ message }}
+    </div>
+
+    <!-- Formulario para agregar nuevo correo -->
+    <div class="add-email-section">
+      <h2>Agregar Nuevo Usuario</h2>
+      <div class="add-email-form">
+        <input 
+          type="email" 
+          [(ngModel)]="newEmail" 
+          placeholder="correo@ejemplo.com"
+          (keyup.enter)="addEmail()"
+          [disabled]="loading"
+          class="email-input"
+        />
+        <button 
+          (click)="addEmail()" 
+          [disabled]="loading || !newEmail"
+          class="btn btn-primary"
+        >
+          <span *ngIf="!loading">Agregar</span>
+          <span *ngIf="loading">Agregando...</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Lista de correos autorizados -->
+    <div class="authorized-emails-section">
+      <h2>Usuarios Autorizados ({{ authorizedEmails.length }})</h2>
+      
+      <div *ngIf="loading && authorizedEmails.length === 0" class="loading">
+        Cargando usuarios...
+      </div>
+
+      <div *ngIf="!loading && authorizedEmails.length === 0" class="empty-state">
+        No hay usuarios autorizados
+      </div>
+
+      <div class="emails-list">
+        <div *ngFor="let email of authorizedEmails" class="email-item">
+          <div class="email-info">
+            <span class="email-text">{{ email }}</span>
+            <span *ngIf="isAdminEmail(email)" class="admin-badge">ADMIN</span>
+          </div>
+            <button 
+              *ngIf="!isAdminEmail(email)"
+              (click)="openConfirmModal(email)" 
+              [disabled]="loading"
+              class="btn btn-danger"
+            >
+              Eliminar
+            </button>
+            <span *ngIf="isAdminEmail(email)" class="protected-label">
+              Protegido
+            </span>
+          </div>
+          <!-- Modal de confirmación profesional -->
+          <div class="modal-overlay" *ngIf="showConfirmModal">
+            <div class="modal-confirm">
+              <div class="modal-header">
+                <span class="modal-icon">⚠️</span>
+                <h3>Confirmar eliminación</h3>
+              </div>
+              <div class="modal-body">
+                <p>¿Estás seguro que deseas eliminar el acceso para <b>{{ emailToDelete }}</b>?</p>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-danger" (click)="confirmRemoveEmail()" [disabled]="loading">Sí, eliminar</button>
+                <button class="btn btn-secondary" (click)="cancelRemoveEmail()" [disabled]="loading">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

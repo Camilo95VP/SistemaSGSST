@@ -6,7 +6,9 @@ import { PlanearComponent } from './components/pages/planear/planear.component';
 import { HacerComponent } from './components/pages/hacer/hacer.component';
 import { VerificarComponent } from './components/pages/verificar/verificar.component';
 import { ActuarComponent } from './components/pages/actuar/actuar.component';
+import { AdminComponent } from './components/pages/admin/admin.component';
 import { AuthGuard } from './guards/auth.guard';
+import { AdminGuard } from './guards/admin.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'hacer', component: HacerComponent, canActivate: [AuthGuard] },
   { path: 'verificar', component: VerificarComponent, canActivate: [AuthGuard] },
   { path: 'actuar', component: ActuarComponent, canActivate: [AuthGuard] },
+  { path: 'admin', component: AdminComponent, canActivate: [AdminGuard] },
   { path: '**', redirectTo: '' }
 ];
 

@@ -11,10 +11,16 @@ export const environment = {
         appId: "1:988833698347:web:7820a24db9a6446863906e",
         measurementId: "G-NHQPFRX950"
     },
+    // Administradores con acceso total al panel de administración
+    authorizedAdmins: [
+        'camiloflstudio@gmail.com',
+        'eduarcastanedam@gmail.com'
+    ],
+    // Usuarios autorizados para acceder a la aplicación
     authorizedEmails: [
-        'camiloflstudio@gmail.com', 
-        'juan.castaneda@sofka.com.co', 
+        'camiloflstudio@gmail.com',
         'eduarcastanedam@gmail.com',
+        'juan.castaneda@sofka.com.co', 
         'orangesst1@gmail.com',
         'eduarcastanedam2@gmail.com'
     ]

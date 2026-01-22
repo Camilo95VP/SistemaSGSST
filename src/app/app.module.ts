@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,9 +21,11 @@ import { VerificarComponent } from './components/pages/verificar/verificar.compo
 import { ActuarComponent } from './components/pages/actuar/actuar.component';
 import { NavBarComponent } from './components/shared/navBar/navBar.component';
 import { LoginComponent } from './components/shared/login/login.component';
+import { AdminComponent } from './components/pages/admin/admin.component';
 
 // Guards
 import { AuthGuard } from './guards/auth.guard';
+import { AdminGuard } from './guards/admin.guard';
 
 @NgModule({
   declarations: [
@@ -33,20 +36,20 @@ import { AuthGuard } from './guards/auth.guard';
     VerificarComponent,
     ActuarComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    // La inicialización vía AngularFireModule garantiza que 
-    // todos los componentes internos de Firebase se registren al arrancar.
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

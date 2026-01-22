@@ -39,6 +39,50 @@
 	font-weight: bold;
 	letter-spacing: 2px;
 }
+
+/* Menu de navegación */
+.config-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 22px;
+	background: #23272f;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 18px;
+	font-weight: 600;
+	font-size: 1rem;
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.13);
+	transition: all 0.2s;
+	margin-left: 10px;
+	border: 1px solid #3a3f4b;
+	letter-spacing: 0.5px;
+}
+.config-link:hover, .config-link.active {
+	background: #1a1d22;
+	color: #e0e0e0;
+	box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+	border-color: #5a5f6b;
+	text-decoration: none;
+}
+.config-icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14,12.94a7.07,7.07,0,0,0,.05-1,7.07,7.07,0,0,0-.05-1l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a7,7,0,0,0-1.73-1l-.38-2.65A.5.5,0,0,0,13,2h-4a.5.5,0,0,0-.5.42l-.38,2.65a7,7,0,0,0-1.73,1l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.64L4.86,10a7.07,7.07,0,0,0-.05,1,7.07,7.07,0,0,0,.05,1l-2.11,1.65a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.61.22l2.49-1a7,7,0,0,0,1.73,1l.38,2.65A.5.5,0,0,0,9,22h4a.5.5,0,0,0,.5-.42l.38-2.65a7,7,0,0,0,1.73-1l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>') no-repeat center center;
+	background-size: contain;
+	transform: translateY(-2px);
+}
+
+.admin-link.active {
+	background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+	box-shadow: 0 4px 16px rgba(102, 126, 234, 0.5);
+}
+
+.admin-icon {
+	font-size: 1.1rem;
+}
+
 .navbar-user {
 	display: flex;
 	align-items: center;

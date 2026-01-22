@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environments';
-
-// IMPORTACIONES DE COMPATIBILIDAD
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import firebase from 'firebase/compat/app'; // Necesario para el GoogleAuthProvider
+import firebase from 'firebase/compat/app';
 import { SessionService } from 'src/app/services/session.service';
+import { AdminService } from 'src/app/services/admin.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -16,46 +15,55 @@ export class LoginComponent implements OnInit {
   user: any = null;
   message: string = '';
   loading: boolean = false;
+  authorizedEmails: string[] = [];
+  authorizedEmailsSub?: Subscription;
 
-  // Inyectamos AngularFireAuth (Compat) y SessionService
   constructor(
     private afAuth: AngularFireAuth, 
     private router: Router,
-    private sessionService: SessionService
+    private sessionService: SessionService,
+    private adminService: AdminService
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // Suscribirse a la lista de correos autorizados en tiempo real
+    this.authorizedEmailsSub = this.adminService.getAuthorizedEmailsRealtime().subscribe(emails => {
+      this.authorizedEmails = emails;
+    });
+  }
+
+  ngOnDestroy() {
+    this.authorizedEmailsSub?.unsubscribe();
+  }
 
   async loginWithGoogle() {
     this.loading = true;
     this.message = '';
     try {
-      // Usamos el provider desde el namespace de compatibilidad
       const provider = new firebase.auth.GoogleAuthProvider();
-      
-      // La versión compat usa el método directamente desde la instancia inyectada
       const result = await this.afAuth.signInWithPopup(provider);
       this.user = result.user;
 
-      // Mostrar validando permisos durante 2 segundos
       await new Promise(resolve => setTimeout(resolve, 2000));
 
       const email = this.user?.email || '';
-      
-      if (environment.authorizedEmails.includes(email)) {
-        // Verificar si ya existe una sesión activa para este correo
+
+      // Validar solo contra la lista dinámica de Firebase
+      if (this.authorizedEmails.includes(email)) {
         const hasSession = await this.sessionService.hasActiveSession(email);
-        
         if (hasSession) {
-          // Si ya existe una sesión activa, cerrar sesión y mostrar error
           this.message = 'No tiene permitido iniciar sesión en este momento';
           await this.afAuth.signOut();
           this.user = null;
         } else {
-          // Si no existe sesión activa, registrar la nueva sesión
           await this.sessionService.registerSession(email, this.user.uid);
-          this.message = `¡Bienvenido, ${this.user?.displayName || email}!`;
+          if (this.adminService.isAdmin(email)) {
+            this.message = `¡Bienvenido Administrador, ${this.user?.displayName || email}!`;
+          } else {
+            this.message = `¡Bienvenido, ${this.user?.displayName || email}!`;
+          }
           this.router.navigate(['/home']);
+            sessionStorage.setItem('justLoggedIn', 'true');
         }
       } else {
         this.message = 'Usuario/correo no autorizado.';

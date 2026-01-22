@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sgsst-c988a"
-  }
+    "default": "sgsst-c988a",
+    "sgsst": "sgsst-c988a"
+  },
+  "targets": {},
+  "etags": {}
 }
